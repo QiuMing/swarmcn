@@ -1,4 +1,4 @@
-package com.swarmcn.user.service;
+package com.swarmcn;
 
 import org.mvnsearch.spring.boot.dubbo.EnableDubboConfiguration;
 import org.springframework.boot.SpringApplication;

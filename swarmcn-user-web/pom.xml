@@ -18,11 +18,13 @@
             <groupId>com.swarmcn</groupId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--<dependency>
-            <groupId>org.mvnsearch</groupId>
-            <artifactId>spring-boot-starter-demo-uic</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>-->
+
+        <dependency>
+            <artifactId>swarmcn-common</artifactId>
+            <groupId>com.swarmcn</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.mvnsearch.spring.boot</groupId>
             <artifactId>spring-boot-starter-dubbo</artifactId>
@@ -83,6 +85,19 @@
             <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>
             <version>0.4</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.boyazuo</groupId>
+            <artifactId>shiro-spring-boot-starter</artifactId>
+            <version>1.0.2</version>
         </dependency>
 
     </dependencies>

@@ -10,26 +10,65 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>swarmcn-user-api</artifactId>
+    <artifactId>swarmcn-common</artifactId>
+
+    <properties>
+        <!--  依赖版本  -->
+        <mybatis.version>3.4.0</mybatis.version>
+        <mybatis.spring.version>	1.3.0</mybatis.spring.version>
+        <mapper.version>3.3.8</mapper.version>
+        <pagehelper.version>4.1.3</pagehelper.version>
+    </properties>
+
 
     <dependencies>
         <dependency>
-            <groupId>org.mvnsearch.spring.boot</groupId>
-            <artifactId>spring-boot-starter-dubbo</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.11</version>
+        </dependency>
+
+        <!--Mybatis-->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis.spring.version}</version>
         </dependency>
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.3.2</version>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+
+        <!--分页插件-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>${pagehelper.version}</version>
+        </dependency>
+        <!--通用Mapper-->
         <dependency>
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper</artifactId>
-            <version>3.3.8</version>
+            <version>${mapper.version}</version>
         </dependency>
     </dependencies>
 
@@ -48,6 +87,7 @@
                     </execution>
                 </executions>
                 <dependencies>
+
                     <!--通用Mapper-->
                     <dependency>
                         <groupId>tk.mybatis</groupId>
@@ -63,4 +103,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

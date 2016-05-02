@@ -21,6 +21,7 @@
         <module>swarmcn-user-web</module>
         <module>swarmcn-user-api</module>
         <module>swarmcn-user-service</module>
+        <module>swarmcn-common</module>
     </modules>
 
     <dependencyManagement>

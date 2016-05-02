@@ -1,5 +1,6 @@
 ##所做工作
-* spring boot  和 dubbo 整合，主要参考于 [inux-china/spring-boot-dubbo](https://github.com/linux-china/spring-boot-dubbo)
+* spring boot  和 dubbo 整合，主要参考于 [linux-china/spring-boot-dubbo](https://github.com/linux-china/spring-boot-dubbo)
+* 完成mybatis 、mybatis 分页插件、通用mapper、mybatis-generator 
 * 初步整合swagger ,访问链接 swagger 的 http://localhost:8080/swagger-ui.html
 
 ##启动方法
@@ -48,5 +49,9 @@
 * 在前两部的基础上，先启动服务端项目，即service项目 ,运行swarmcn-user-service 下的SpringBootDubboServerApplication方法，
 然后在启动客户端项目，即web 项目，运行swarmcn-user-web 。
 
+
+## 文档学习
+[Mybatis 分页插件](http://git.oschina.net/free/Mybatis_PageHelper)
+[spring boot profile 配置](http://blog.csdn.net/lihe2008125/article/details/50443491)
 ##接下来要做的
 * 整合mybatis、shiro

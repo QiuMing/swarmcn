@@ -1,4 +1,4 @@
-package com.swarmcn.user.web;
+package com.swarmcn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
