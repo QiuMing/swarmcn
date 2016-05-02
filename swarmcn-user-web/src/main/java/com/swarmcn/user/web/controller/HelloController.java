@@ -21,12 +21,12 @@ public class HelloController {
     @Autowired
     RoleMapper roleMapper;
 
-    @RequestMapping(method=RequestMethod.GET,value="saurzcode/hello")
+    @RequestMapping(method=RequestMethod.GET,value="/hello")
     @ApiOperation(httpMethod = "GET", value = "Say Hello To World using Swagger")
-    public String sayHello() {
+    public PageInfo<Role> sayHello() {
         PageHelper.startPage(1,1);
         List<Role> roles = roleMapper.selectAll();
         PageInfo<Role> page = new PageInfo<Role>(roles);
-        return "Greetings from SaurzCode! ";
+        return page;
     }
 }

@@ -31,4 +31,15 @@ spring:
         registry : zookeeper://127.0.0.1:2181
         protocol : dubbo
         port : 6379
-
+shiro:
+  realm: com.swarmcn.user.web.shiro.SystemRealm
+  #loginUrl:  #login url
+  #successUrl: #success url
+  #unauthorizedUrl: #403 url
+  filterChainDefinitions:   #filter chian
+    "/login": authc
+    "/logout": logout
+    "/hello": anon
+    "/": anon
+    "/static/**": anon
+    "/**": authc
