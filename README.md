@@ -1,11 +1,11 @@
-##所做工作
+## 所做工作
 * spring boot  和 dubbo 整合，主要参考于 [linux-china/spring-boot-dubbo](https://github.com/linux-china/spring-boot-dubbo)
 * 完成mybatis 、mybatis 分页插件、通用mapper、mybatis-generator 生成器
 * 初步整合swagger ,访问链接 swagger 的 http://localhost:8080/swagger-ui.html
 * 初步整合shiro,添加了依赖于简单的配置
 ##启动方法
 
-###1、编译spring-boot-starter-dubbo
+### 1、编译spring-boot-starter-dubbo
 
 * spring-boot-starter-dubbo目前在github 上面有几个版本，我们这个项目采用的版本源于[inux-china/spring-boot-dubbo](https://github.com/linux-china/spring-boot-dubbo)
 依赖于dubbo 3.0,而maven 中央仓库并没有提供这个两个依赖，所以我们需要自己在本地编译生成，步骤如下：
@@ -45,17 +45,17 @@
 </dependency>  
 <!-- zookeeper end --> 
 ```
-###3、项目启动
+### 3、项目启动
 * 在前两部的基础上，先启动服务端项目，即service项目 ,运行swarmcn-user-service 下的SpringBootDubboServerApplication方法，
 然后在启动客户端项目，即web 项目，运行swarmcn-user-web 。
 
 
-###4、数据库表临时采用了jeesite,测试用了它的role 表，我们会尽快提供自己的数据库表
+### 4、数据库表临时采用了jeesite,测试用了它的role 表，我们会尽快提供自己的数据库表
 
 ## 文档学习
 [Mybatis 分页插件](http://git.oschina.net/free/Mybatis_PageHelper)
 [spring boot profile 配置](http://blog.csdn.net/lihe2008125/article/details/50443491)
 
-##接下来要做的
+## 接下来要做的
 * 使用jwt 进行身份认证于数据传输，主要用它来进行前后端分离
 * 数据库表设计
